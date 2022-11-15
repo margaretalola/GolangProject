@@ -89,30 +89,3 @@ func main() {
 		log.Fatal(err)
 	}
 }
-
-//taruh sebelum func matkul handler
-//func getMatkul(w http.ResponseWriter, r *http.Request) {
-// 	if r.Method == "GET" {
-// 		w.Header().Set("Content-Type", "application/json")
-// 		w.WriteHeader(http.StatusOK)
-// 		json.NewEncoder(w).Encode(Mk)
-// 		return
-// 	}
-// 	http.Error(w, "Error!", http.StatusNotFound)
-// }
-
-// func postMatkul(w http.ResponseWriter, r *http.Request) {
-// 	w.Header().Set("Content-Type", "application/json")
-// 	var mkl Matkul
-// 	if r.Method == "POST" {
-// 		reqbody, err := ioutil.ReadAll(r.Body)
-// 		if err != nil {
-// 			fmt.Fprintf(w, "Harap Masukkan Data")
-// 		}
-// 		json.Unmarshal(reqbody, &mkl)
-// 		Mk = append(Mk, mkl)
-// 		json.NewEncoder(w).Encode(mkl)
-// 		return
-// 	}
-// 	http.Error(w, "Error!", http.StatusNotFound)
-// }
