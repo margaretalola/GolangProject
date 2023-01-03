@@ -1,7 +1,3 @@
-//2.	Buat program percabangan dimana saat melakukan input A
-//dia akan melakukan perulangan sebanyak 10x berisi Nama dan
-//bila di input B mengulang NPM kalian (10 Point)
-
 package main
 
 import "fmt"
