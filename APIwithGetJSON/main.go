@@ -1,6 +1,3 @@
-// Buatlah API method GET pada Golang dengan mengambil NPM,
-// NAMA, MATKUL dari
-// kodingan berisikan data masing-masing dan cek lewat postman! (45 Point)
 package main
 
 import (
@@ -10,16 +7,16 @@ import (
 	"net/http"
 )
 
-// making struct of mahasiswa
+//struct of mahasiswa
 type mataKuliah struct {
 	NPM    int    `json:"npm"`
 	NAMA   string `json:"nama"`
 	MATKUL string `json:"matkul"`
 }
 
-// make a function of struct
+// function of struct
 func dataMatkul() []mataKuliah {
-	mk := []mataKuliah{ //array; cause they're saving many data with the same type
+	mk := []mataKuliah{ 
 		{
 			NPM:    5042,
 			NAMA:   "Mar",
